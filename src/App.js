@@ -72,6 +72,9 @@ function App() {
     const vwst = [...viewstate]
     vwst.push(false);
     setViewstate(vwst);
+    const crdst = [...cardstate];
+    crdst[keycount] = "Inprogress"
+    setCardstate(crdst); 
 
  }
 
