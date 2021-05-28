@@ -48,6 +48,10 @@ function App() {
   }
 
   function handleChange(event) {
+    if(ele === ""){
+
+    }
+    else{
     event.preventDefault();
     const namelist= [...name];
     let input = { key: keycount, value: ele}
@@ -75,7 +79,7 @@ function App() {
     const crdst = [...cardstate];
     crdst[keycount] = "Inprogress"
     setCardstate(crdst); 
-
+    }
  }
 
 
@@ -226,12 +230,14 @@ function completdelete(k){
        <form>
                 <div className="header" >
                     <h3>ToDo list</h3>
+                    <form>
                     <input type="text"
                            placeholder="Your Tasks"
                            value={ele}
                            onChange={keyChange}
                            />
                      <button type="submit" onClick={handleChange}>Add</button>
+                     </form>
                  </div> 
                  <h6 className="heading_pending">InProgress:</h6>
                  <form className="Pendingform">
