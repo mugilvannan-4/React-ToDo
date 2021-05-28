@@ -49,7 +49,7 @@ function App() {
 
   function handleChange(event) {
     if(ele === ""){
-
+     console.log("Enter something");
     }
     else{
     event.preventDefault();
