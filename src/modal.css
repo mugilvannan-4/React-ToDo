@@ -1,7 +1,7 @@
 
   .modeldata {
     display:block;
-    position: fixed; /* Stay in place */
+    position:absolute;
     z-index: 1; /* Sit on top */
     padding-top: 80px; /* Location of the box */
     left:9.5cm;
@@ -10,6 +10,8 @@
     height: 20%; /* Full height */
     overflow:visible; /* Enable scroll if needed */
     border-radius: 3mm;
+    margin-right: auto; 
+    margin-left: auto;
     background-color:rgb(235, 235, 126);
   }
   
